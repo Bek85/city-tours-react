@@ -1,7 +1,31 @@
 import React, { Component } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default class Tour extends Component {
   render() {
-    return <div>Hello from Tour</div>;
+    const { id, city, img, name, info } = this.props.tour;
+    const { removeTour } = this.props;
+
+    return (
+      <article className='tour'>
+        <div className='img-container'>
+          <img src={img} alt='tour cover' />
+          <span className='close-btn'>
+            <FontAwesomeIcon icon='window-close' />
+          </span>
+        </div>
+        <div className='tour-info'>
+          <h3>{city}</h3>
+          <h4>{name}</h4>
+          <h5>
+            info
+            <span>
+              <FontAwesomeIcon icon='caret-square-down' />
+            </span>
+          </h5>
+          <p>{info}</p>
+        </div>
+      </article>
+    );
   }
 }
