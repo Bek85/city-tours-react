@@ -14,7 +14,6 @@ function App() {
   return (
     <div>
       <Navbar />
-      Our App
       <TourList />
     </div>
   );
