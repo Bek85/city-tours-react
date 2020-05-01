@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@100&display=swap");
+@import "./App.scss";
+@import "./components/Navbar/navbar.scss";
+@import "./components/TourList/tourList.scss";
+@import "./components//TourList/tourList.scss";
+@import "./components/Tour//tour.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  background-color: $mainWhite;
+  color: $mainBlack;
+}
